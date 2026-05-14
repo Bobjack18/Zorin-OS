@@ -1,8 +1,13 @@
 #!/bin/bash
-# Add official Zorin OS repositories
+set -e
+
+# 1. Install the tool needed to add repositories
+sudo apt-get update
+sudo apt-get install -y software-properties-common
+
+# 2. Add the Zorin OS PPA
 sudo add-apt-repository -y ppa:zorinos/stable
-sudo add-apt-repository -y ppa:zorinos/patches
 sudo apt-get update
 
-# Install Zorin desktop themes and assets
+# 3. Install the themes and icons
 sudo apt-get install -y zorin-desktop-themes zorin-icon-themes

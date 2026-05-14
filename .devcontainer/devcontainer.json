@@ -1,6 +1,6 @@
 {
     "name": "Zorin OS Environment",
-    "image": "microsoft.com",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
         "ghcr.io/devcontainers/features/desktop-lite:1": {
             "version": "latest",
