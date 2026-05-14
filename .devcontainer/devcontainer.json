@@ -1,0 +1,12 @@
+{
+    "name": "Zorin OS Environment",
+    "image": "microsoft.com",
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {
+            "version": "latest",
+            "desktopDesktop": "xfce"
+        }
+    },
+    "forwardPorts": [6080],
+    "postCreateCommand": "bash .devcontainer/install-zorin.sh"
+}
